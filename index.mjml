@@ -1,0 +1,275 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    
+    <mj-attributes>
+      <!-- Configurações gerais -->
+      <mj-all font-family="Montserrat, Arial, sans-serif" />
+      <mj-text padding="0" />
+      <mj-image padding="0" />
+      
+      <!-- Classes personalizadas -->
+      <mj-class name="name-text" font-size="14px" font-weight="700" color="#000000" />
+      <mj-class name="designation-text" font-size="12px" font-weight="400" color="#7b7b7b" />
+      <mj-class name="degree-small" font-size="11px" font-weight="400" color="#7b7b7b" line-height="1.1" />
+      <mj-class name="contact-text" font-size="11px" font-weight="400" color="#7b7b7b" text-decoration="none" />
+      <mj-class name="tagline-text" font-size="11px" font-weight="400" color="#7b7b7b" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .name-text { white-space: nowrap !important; }
+      .designation-text { white-space: nowrap !important; }
+      .degree-small { white-space: nowrap !important; }
+      .contact-text { white-space: nowrap !important; }
+      .tagline-text { white-space: nowrap !important; }
+      
+      /* Links sem decoração */
+      a { color: inherit !important; text-decoration: none !important; }
+      
+      /* CONFIGURAÇÕES DE PADDING - FACILMENTE AJUSTÁVEIS */
+      
+      /* Espaçamento entre ícones de contato e texto */
+      .contact-icon-spacing { padding-right: 2px !important; }
+      
+      /* Espaçamento entre ícones de redes sociais */
+      .social-icon-spacing { padding-right: 5px !important; }
+      
+      /* Espaçamento entre certificados */
+      .certificate-spacing { padding-right: 6px !important; }
+      
+      /* Espaçamento do LinkedIn no nome */
+      .linkedin-name-spacing { padding-right: 8px !important; }
+      
+      /* CONFIGURAÇÕES DE POSICIONAMENTO - FACILMENTE AJUSTÁVEIS */
+      
+      /* Posicionamento da tabela LinkedIn + Nome Wagner */
+      .linkedin-name-table { 
+        text-align: right !important; 
+        margin-left: auto !important;
+        margin-right: 0 !important;
+      }
+      
+      /* Posicionamento individual do ícone LinkedIn Wagner */
+      .linkedin-wagner-position { 
+        vertical-align: middle !important;
+        text-align: center !important;
+      }
+      
+      /* Posicionamento da tabela de redes sociais */
+      .social-media-table { 
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+      }
+      
+      /* Posicionamento individual dos ícones de redes sociais */
+      .social-icon-position { 
+        vertical-align: middle !important;
+        text-align: center !important;
+      }
+      
+      /* Ajustes responsivos específicos */
+      @media only screen and (max-width:480px) {
+        .hide-mobile { display: none !important; }
+        .mobile-center { text-align: center !important; }
+        .mobile-left { text-align: left !important; }
+        .mobile-block { display: block !important; width: 100% !important; }
+        
+        /* Posicionamento mobile */
+        .linkedin-name-table { text-align: left !important; }
+        .social-media-table { text-align: left !important; }
+        
+        /* Certificados responsivos */
+        .certificados-mobile img {
+          max-width: 48vw !important;
+          height: auto !important;
+          display: inline-block !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#ffffff" width="650px">
+    <mj-section padding="0">
+      
+      <!-- COLUNA ESQUERDA: Foto + Nome + Cargos + LinkedIn -->
+      <mj-column width="35%" padding="15px 0 15px 0">
+        
+        <!-- Foto do usuário -->
+        <mj-image 
+          src="https://previewengine-accl.zoho.com/image/WD/r6tjlb579ccb6a0224808834e2918d834f7ff?version=1.0&width=2046&height=1536" 
+          alt="Wagner Dias" 
+          width="130px" 
+          align="right"
+          padding-right="25px"
+        />
+        
+        <!-- Nome com LinkedIn -->
+        <mj-table padding="10px 0" align="right" css-class="linkedin-name-table">
+          <tr>
+            <td class="linkedin-name-spacing linkedin-wagner-position">
+              <a href="https://www.linkedin.com/in/wagner-obrasonline/" style="padding-left: 10px;" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/600232bd895346aab4e1db85a2a49259eecc2?version=1.0&width=2046&height=1536" 
+                     width="22" alt="LinkedIn Wagner" style="vertical-align: middle; border: 0;" />
+              </a>
+            </td>
+            <td style="vertical-align: middle; padding-right: 020px;">
+              <span class="name-text" style="font-size: 15px;"><strong>Wagner Dias</strong></span>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Cargo Principal -->
+        <mj-text 
+          mj-class="designation-text" 
+          align="right" 
+          padding-bottom="005px"
+          padding-right="20px"
+        >
+          Diretor Comercial & CMO
+        </mj-text>
+        
+        <!-- Grau Acadêmico -->
+        <mj-text 
+          mj-class="degree-small" 
+          align="right" 
+          padding-right="07px"
+        >
+          M.Sc. Business Management
+        </mj-text>
+        
+      </mj-column>
+      
+      <!-- DIVISÓRIA CENTRAL -->
+      <mj-column width="8%" padding="20px 15px 0 15px" css-class="hide-mobile">
+        <mj-image 
+          src="https://previewengine-accl.zoho.com/image/WD/vhrhy6a99f517f6064144b8dd34ad0e0dcf9b?version=1.0&width=2046&height=1536" 
+          width="18px" 
+          height="180px" 
+          alt="Divisor"
+        />
+      </mj-column>
+      
+      <!-- COLUNA DIREITA: Contatos + Redes + Certificados + Tagline -->
+      <mj-column width="57%" padding="15px 0">
+        
+        <!-- WhatsApp -->
+        <mj-table padding="0 0 5px 0">
+          <tr>
+            <td style="vertical-align: middle;" class="contact-icon-spacing">
+              <a href="https://wa.me/5511993996757" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/vi3n0b26fbe20e8324429a7caf9c3b193a128?version=1.0&width=2046&height=1536" 
+                     width="20" alt="WhatsApp" style="border: 0;" />
+              </a>
+            </td>
+            <td style="vertical-align: middle;">
+              <a href="https://wa.me/5511993996757" target="_blank">
+                <span class="contact-text">(11) 99399-6757</span>
+              </a>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Email -->
+        <mj-table padding="0 0 5px 0">
+          <tr>
+            <td style="vertical-align: middle;" class="contact-icon-spacing">
+              <a href="mailto:wagner@obrasonline.com.br">
+                <img src="https://previewengine-accl.zoho.com/image/WD/vi3n09ad73e5fec16446eade7636a0c1046b8?version=1.0&width=2046&height=1536" 
+                     width="20" alt="Email" style="border: 0;" />
+              </a>
+            </td>
+            <td style="vertical-align: middle;">
+              <a href="mailto:wagner@obrasonline.com.br">
+                <span class="contact-text">wagner@obrasonline.com.br</span>
+              </a>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Website -->
+        <mj-table padding="0 0 5px 0">
+          <tr>
+            <td style="vertical-align: middle;" class="contact-icon-spacing">
+              <a href="https://www.obrasonline.com.br" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/vi3n0d0f567bb627747ed99f42a3d4db0b340?version=1.0&width=2046&height=1536" 
+                     width="20" alt="Site" style="border: 0;" />
+              </a>
+            </td>
+            <td style="vertical-align: middle;">
+              <a href="https://www.obrasonline.com.br" target="_blank">
+                <span class="contact-text">www.obrasonline.com.br</span>
+              </a>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Redes Sociais -->
+        <mj-table padding="2px 0" css-class="redes-sociais social-media-table">
+          <tr>
+            <td class="social-icon-spacing social-icon-position">
+              <a href="https://linkedin.com/company/obras-online" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/600232bd895346aab4e1db85a2a49259eecc2?version=1.0&width=2046&height=1536" 
+                     width="21" alt="LinkedIn" style="border: 0;" />
+              </a>
+            </td>
+            <td class="social-icon-spacing social-icon-position">
+              <a href="http://instagram.com/obrasonline" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/600234d732933f5f44d4d80312694fb809b20?version=1.0&width=2046&height=1536" 
+                     width="21" alt="Instagram" style="border: 0;" />
+              </a>
+            </td>
+            <td class="social-icon-spacing social-icon-position">
+              <a href="https://www.facebook.com/obrasonlineoficial" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/60023dedb216f29d34167852a742670ca2ade?version=1.0&width=2046&height=1536" 
+                     width="21" alt="Facebook" style="border: 0;" />
+              </a>
+            </td>
+            <td class="social-icon-spacing social-icon-position">
+              <a href="https://obrasonline.com.br/blog/" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/jr6ip819525a1f6b348e697db014ad318d520?version=1.0&width=2046&height=1536" 
+                     width="21" alt="Blog" style="border: 0;" />
+              </a>
+            </td>
+            <td class="social-icon-position">
+              <a href="https://www.youtube.com/channel/UCWU4tkpEpXOJDgcGUMNzOvw" target="_blank">
+                <img src="https://previewengine-accl.zoho.com/image/WD/6002342e955479ad14fa782a04abdf5a46681?version=1.0&width=2046&height=1536" 
+                     width="29" alt="YouTube" style="border: 0;" />
+              </a>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Certificados -->
+        <mj-table padding="16px 0 2px 0" css-class="certificados-mobile">
+          <tr>
+            <td style="vertical-align: top;" class="certificate-spacing">
+              <a href="#">
+                <img src="https://previewengine-accl.zoho.com/image/WD/vi3n01eaba1ae85f14c6a826dba9d984c704c?version=1.0&width=2046&height=1536" 
+                     width="90" alt="Certificado 1" style="border: 0;" />
+              </a>
+            </td>
+            <td style="vertical-align: top;">
+              <a href="#">
+                <img src="https://previewengine-accl.zoho.com/image/WD/vi3n0d7e076a3066d499fa733436a3f68d176?version=1.0&width=2046&height=1536" 
+                     width="130" alt="Certificado 2" style="border: 0;" />
+              </a>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <!-- Tagline -->
+        <mj-text 
+          mj-class="tagline-text" 
+          align="left" 
+          padding="4px 0 0 0"
+          css-class="tagline-container"
+        >
+          <strong>+24 anos</strong> servindo o setor da Construção e Indústria
+        </mj-text>
+        
+      </mj-column>
+      
+    </mj-section>
+  </mj-body>
+</mjml>
